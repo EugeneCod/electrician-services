@@ -1,0 +1,41 @@
+@import '../../scss/variables';
+
+.navigation {
+  background-color: $navigation-bg;
+  padding: 10px;
+  width: 100%;
+
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+
+    .listItem {
+
+      .link {
+        text-decoration: none;
+        color: $font-light;
+        display: flex;
+        column-gap: 2px;
+        padding: 5px;
+        &.active {
+          text-decoration: underline;
+        }
+
+        .linkIcon {
+          width: 16px;
+          height: 16px;
+        }
+
+        .linkText {
+          margin: 0;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+//colors
+$header-bg: #1d1d1d;
+$navigation-bg: #454545;
+$main-bg: #eeeeee;
+$button-bg: #07d500;
+$font-light: #fffecb;
+
+
+//font-sizes
+$enlarged: 18px;
+
+//font-families
+$app-font-family: 'Inter', Arial, Helvetica, sans-serif;
+$logo-font-family: 'Fyodor', Arial, Helvetica, sans-serif;
+
+//templetes
+// %link-effects {
+//   transition: opacity 0.3s;
+//   &:hover {
+//     opacity: 0.7;
+//   }
+//   &:active {
+//     opacity: 0.4;
+//   }
+// }
+
+// %height-full-screen {
+//   min-height: calc(100vh - 75px - 152.44px);
+//   @media (max-width: 768px) {
+//     min-height: calc(100vh - 74px - 242.44px);
+//   }
+//   @media (max-width: 420px) {
+//     min-height: calc(100vh - 74px - 301.06px);
+//   }
+// }
+
+// @extend %link-effects;
