@@ -1,9 +1,18 @@
+import {useState} from 'react';
+
 import styles from './Header.module.scss';
 import mainLogo from '../../assets/images/logo_color.svg';
 import phoneLogo from '../../assets/images/phone_icon.svg';
 import { Navigation } from '../';
 
 const Header = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
+
+  function handleBurgerClick() {
+    setIsMenuOpen((prev) => !prev)
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -23,8 +32,11 @@ const Header = () => {
           <p className={styles.phoneInfo}>Ответим на звонок с 8:00 до 17:00</p>
         </div>
         <button className={styles.buttonCall}>Заказать звонок</button>
+        <div onClick={() => handleBurgerClick} className={styles.burgerContainer}>
+          <span className={styles.burger} />
+        </div>
       </div>
-      <Navigation />
+      <Navigation isMenuOpen={isMenuOpen} />
     </header>
   );
 };

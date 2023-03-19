@@ -2,8 +2,23 @@
 
 .navigation {
   background-color: $navigation-bg;
+  align-self: stretch;
   padding: 10px;
-  width: 100%;
+
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 127.38px;
+    right: -100%;
+    min-width: 150px;
+    overflow: auto;
+    transition: right 0.5s ease 0s;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+
+    &.isMenuOpen {
+      right: 0;
+    }
+  }
 
   .list {
     list-style: none;
@@ -14,7 +29,15 @@
     justify-content: center;
     column-gap: 30px;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
     .listItem {
+      @media (max-width: 768px) {
+        border-bottom: 1px solid $font-light;
+      }
 
       .link {
         text-decoration: none;

@@ -5,18 +5,24 @@
   flex-direction: column;
   align-items: center;
   background-color: $header-bg;
-  padding: 10px 10px 0;
-
+  
+  
   .container {
-    width: 100%;
+    align-self: stretch;
     max-width: 1920px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 10px;
     align-items: center;
-    margin-bottom: 10px;
+    padding: 10px;
+
+    @media (max-width: 768px) {
+
+    }
   }
 
   .linkLogo {
+    grid-column: 1/2;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -49,10 +55,19 @@
   }
 
   .phonesContainer {
+    grid-column: 3/4;
+    justify-self: end;
     display: flex;
     flex-direction: column;
     row-gap: 3px;
     max-width: 150px;
+
+    @media (max-width: 768px) {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      justify-self: start;
+      padding-left: 10px;
+    }
   }
 
   .phoneBlock {
@@ -78,6 +93,9 @@
   }
 
   .buttonCall {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    justify-self: end;
     padding: 0;
     outline: none;
     border: none;
@@ -91,10 +109,61 @@
   }
 
   .burgerContainer {
-    
+    display: none;
+
+    @media (max-width: 768px) {
+      grid-column: 4/5;
+      grid-row: 2/3;
+      justify-self: end;
+      margin-right: 15px;
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 3;
+
+      &::before,
+      &::after {
+        content: '';
+        background-color: $button-bg;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+
+      &.active::before  {
+        transform: rotate(45deg);
+        top: 9px;
+      }
+
+      &.active::after  {
+        transform: rotate(-45deg);
+        bottom: 9px;
+      }
+    }
   }
 
   .burger {
+    position: absolute;
+    background-color: $button-bg;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.5s ease 0s;
 
+    &.active {
+      transform: scale(0);
+    }
   }
 }
