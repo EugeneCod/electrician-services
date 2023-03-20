@@ -1,8 +1,9 @@
 import { FC } from 'react'
+import { Slider } from '../../components/'
 
 const Home: FC = () => {
   return (
-    <main>Home</main>
+    <Slider />
   )
 }
 
