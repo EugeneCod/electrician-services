@@ -7,7 +7,7 @@ import servicesLogo from '../../assets/images/logo_services.svg';
 import calcLogo from '../../assets/images/logo_calculator.svg';
 import aboutUsLogo from '../../assets/images/logo_about-us.svg';
 
-let cx = classNames.bind(styles);
+const cx = classNames.bind(styles);
 
 type NavigationProps = {
   isMenuOpen: boolean;
