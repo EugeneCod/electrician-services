@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 import styles from './Header.module.scss';
 import mainLogo from '../../assets/images/logo_color.svg';
@@ -7,10 +7,15 @@ import { Navigation } from '../';
 
 const Header = () => {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    let bodyStyle = document.body.style;
+    isMenuOpen ? (bodyStyle.overflow = 'hidden') : (bodyStyle.overflow = 'initial');
+  }, [isMenuOpen]);
 
   function handleBurgerClick() {
-    setIsMenuOpen((prev) => !prev)
+    setIsMenuOpen((prev) => !prev);
   }
 
   return (
@@ -32,7 +37,7 @@ const Header = () => {
           <p className={styles.phoneInfo}>Ответим на звонок с 8:00 до 17:00</p>
         </div>
         <button className={styles.buttonCall}>Заказать звонок</button>
-        <div onClick={() => handleBurgerClick} className={styles.burgerContainer}>
+        <div onClick={handleBurgerClick} className={styles.burgerContainer}>
           <span className={styles.burger} />
         </div>
       </div>
