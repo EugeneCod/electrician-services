@@ -1,14 +1,13 @@
 import { FC } from "react";
 
 import styles from "./App.module.scss";
-import { Header } from "../";
-import { Home } from "../../pages/";
+import { Header, Main } from "../";
 
 const App: FC = () => {
   return (
     <div className={styles.app}>
       <Header />
-      <Home />
+      <Main />
     </div>
   );
 }
