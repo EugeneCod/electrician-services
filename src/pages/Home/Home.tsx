@@ -1,9 +1,12 @@
 import { FC } from 'react'
-import { Slider } from '../../components/'
+import { Slider, Promo } from '../../components/'
 
 const Home: FC = () => {
   return (
+  <>
     <Slider />
+    <Promo />
+  </>
   )
 }
 

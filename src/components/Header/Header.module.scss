@@ -26,6 +26,8 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+
+    
   }
 
   .logo {
@@ -42,6 +44,11 @@
     font-weight: 700;
     font-size: 18px;
     margin: 0;
+    
+    @media (max-width: 450px) {
+      width: min-content;
+    }
+
     &::after {
       content: '';
       width: 100%;
