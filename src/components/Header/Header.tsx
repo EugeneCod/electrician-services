@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 
 import styles from './Header.module.scss';
 import mainLogo from '../../assets/images/logo_color.svg';
-import phoneLogo from '../../assets/images/phone_icon.svg';
+import phoneLogo from '../../assets/images/icon_phone.svg';
 import { Navigation } from '../';
 
 const Header = () => {
