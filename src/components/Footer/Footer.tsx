@@ -1,20 +1,23 @@
+import { NavLink } from 'react-router-dom';
+
 import styles from './Footer.module.scss';
 import mainLogo from '../../assets/images/logo_color.svg';
 import iconFhone from '../../assets/images/icon_phone.svg';
 import iconMapLocation from '../../assets/images/icon_map-location.svg';
 import iconMail from '../../assets/images/icon_mail.svg';
+import { ROUTES } from '../../utils/constants';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.footerTop}>
-          <a className={styles.linkLogo} href="#home">
+          <NavLink to={ROUTES.HOME} className={styles.linkLogo} >
             <img className={styles.logo} src={mainLogo} alt="Логотип" />
             <p className={styles.logoText}>Электрика сервис</p>
-          </a>
+          </NavLink>
           <div className={styles.contactsBlock}>
-            <h2 className={styles.contactsTitle}>Контанты</h2>
+            <h2 className={styles.contactsTitle}>Контакты</h2>
             <ul className={styles.contactsList}>
               <li className={styles.contactsListItem}>
                 <img className={styles.contactsIcon} src={iconFhone} alt="Телефон" />

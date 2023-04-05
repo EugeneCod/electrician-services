@@ -1,9 +1,12 @@
 import {useState, useEffect} from 'react';
+import { NavLink } from 'react-router-dom';
 
 import styles from './Header.module.scss';
 import mainLogo from '../../assets/images/logo_color.svg';
 import phoneLogo from '../../assets/images/icon_phone.svg';
 import { Navigation } from '../';
+import { ROUTES } from '../../utils/constants';
+
 
 const Header = () => {
 
@@ -21,10 +24,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <a className={styles.linkLogo} href="#home">
+        <NavLink to={ROUTES.HOME} className={styles.linkLogo}>
           <img className={styles.logo} src={mainLogo} alt="Логотип" />
           <p className={styles.logoText}>Электрика сервис</p>
-        </a>
+        </NavLink>
         <div className={styles.phonesContainer}>
           <div className={styles.phoneBlock}>
             <img className={styles.phoneLogo} src={phoneLogo} alt={'Телефон'} />

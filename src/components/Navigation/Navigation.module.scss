@@ -47,12 +47,12 @@
         column-gap: 2px;
         padding: 5px;
         transition: all 0.1s linear;
+        &.active {
+          text-decoration: underline;
+        }
         &:hover {
           // opacity: 0.8;
           transform: scale(1.05);
-        }
-        &.active {
-          text-decoration: underline;
         }
 
         .linkIcon {

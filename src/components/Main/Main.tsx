@@ -1,12 +1,17 @@
 import { Routes, Route } from 'react-router-dom'
-import { Home } from '../../pages'
+
+import { Home, Services, Calculator, AboutUs } from '../../pages'
 import styles from './Main.module.scss';
+import { ROUTES } from '../../utils/constants';
 
 const Main = () => {
   return (
     <main className={styles.main}>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path={ROUTES.HOME} element={<Home />} />
+        <Route path={ROUTES.SERVICES} element={<Services />} />
+        <Route path={ROUTES.CALCULATOR} element={<Calculator />} />
+        <Route path={ROUTES.ABOUTUS} element={<AboutUs />} />
       </Routes>
       
     </main>
