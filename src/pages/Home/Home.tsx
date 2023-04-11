@@ -1,13 +1,13 @@
-import { FC } from 'react'
-import { Slider, Promo } from '../../components/'
+import { Slider, Promo } from '../../components/';
+import { FC } from 'react';
 
 const Home: FC = () => {
   return (
-  <>
-    <Slider />
-    <Promo />
-  </>
-  )
-}
+    <>
+      <Slider />
+      <Promo />
+    </>
+  );
+};
 
-export default Home
+export default Home;

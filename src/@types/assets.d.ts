@@ -17,3 +17,8 @@ declare module '*.scss' {
   const content: any;
   export default content;
 }
+
+declare module '*.xlsx' {
+  const content: any;
+  export default content;
+}
