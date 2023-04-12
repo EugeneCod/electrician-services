@@ -22,9 +22,12 @@
 .title {
   text-align: center;
   color: $font-dark;
-  font-size: 24px;
+  font-size: 30px;
   margin: 0 0 20px 0;
 
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
   @media (max-width: 450px) {
     font-size: 18px;
   }

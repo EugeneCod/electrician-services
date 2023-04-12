@@ -22,6 +22,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    row-gap: 15px;
+  }
 }
 
 .title {
@@ -64,11 +69,12 @@
   }
   
   & .tableHeader {
-    // border-top-left-radius: 10px;
-    // border-top-right-radius: 10px;
-    // border-bottom: 2px solid #6678b1;
-    // background-color: $table-header-bg
     color: $font-dark;
+    font-size: 16px;
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
+    
   }
 
   & .tableHeaderSection {
@@ -78,10 +84,19 @@
     border-top-right-radius: 10px;
     padding-top: 10px;
     padding-bottom: 5px;
+    font-size: 16px;
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
   }
 
   & td {
     color: $font-dark;
+    font-size: 16px;
+    padding: 4px 0 4px;
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
   }
 
   & .name {

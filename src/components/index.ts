@@ -1,5 +1,6 @@
 export { default as AboutServices } from './AboutServices/AboutServices';
 export { default as App } from './App/App';
+export { default as Cover } from './Cover/Cover';
 export { default as Footer } from './Footer/Footer';
 export { default as Header } from './Header/Header';
 export { default as Main } from './Main/Main';

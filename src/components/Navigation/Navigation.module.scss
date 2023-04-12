@@ -14,7 +14,7 @@
     transition: right 0.5s ease 0s;
     padding: 10px;
     border-radius: 8px 0 0 8px;
-    z-index: 5;
+    z-index: 6;
 
     &.isMenuOpen {
       right: 0;
@@ -47,6 +47,10 @@
         column-gap: 2px;
         padding: 5px;
         transition: all 0.1s linear;
+
+        @media (max-width: 768px) {
+          padding: 15px 5px;
+        }
         &.active {
           text-decoration: underline;
         }

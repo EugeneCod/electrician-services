@@ -1,6 +1,7 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useContext} from 'react';
 import { NavLink } from 'react-router-dom';
 
+import AppContext from '../../context/AppContext';
 import styles from './Header.module.scss';
 import mainLogo from '../../assets/images/logo_color.svg';
 import phoneLogo from '../../assets/images/icon_phone.svg';
@@ -10,6 +11,7 @@ import { ROUTES } from '../../utils/constants';
 
 const Header = () => {
 
+  const { isCover, toggleCover } = useContext(AppContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -17,8 +19,21 @@ const Header = () => {
     isMenuOpen ? (bodyStyle.overflow = 'hidden') : (bodyStyle.overflow = 'initial');
   }, [isMenuOpen]);
 
-  function handleBurgerClick() {
+  useEffect(() => {
+    function handleEscClose(evt: any) {
+      if (evt.key === 'Escape') {
+        toggleCover && toggleCover();
+        setIsMenuOpen(!isMenuOpen);
+      }
+    }
+
+    isCover && document.addEventListener('keyup', handleEscClose);
+    return () => document.removeEventListener('keyup', handleEscClose);
+  }, [isCover, toggleCover])
+
+  function handleToggleMenu():void {
     setIsMenuOpen((prev) => !prev);
+    toggleCover && toggleCover();
   }
 
   return (
@@ -40,11 +55,11 @@ const Header = () => {
           <p className={styles.phoneInfo}>Ответим на звонок с 8:00 до 17:00</p>
         </div>
         <button className={styles.buttonCall}>Заказать звонок</button>
-        <div onClick={handleBurgerClick} className={styles.burgerContainer}>
+        <div onClick={handleToggleMenu} className={styles.burgerContainer}>
           <span className={styles.burger} />
         </div>
       </div>
-      <Navigation isMenuOpen={isMenuOpen} />
+      <Navigation isMenuOpen={isMenuOpen} onToggleMenu={handleToggleMenu} />
     </header>
   );
 };
