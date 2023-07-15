@@ -9,7 +9,6 @@ import servicesLogo from '../../assets/images/logo_services.svg';
 import calcLogo from '../../assets/images/logo_calculator.svg';
 import aboutUsLogo from '../../assets/images/logo_about-us.svg';
 
-
 const cx = classNames.bind(styles);
 
 type NavigationProps = {
@@ -26,7 +25,7 @@ const Navigation:FC<NavigationProps> = (props) => {
   });
 
   function handleNavLinkClick() {
-    onToggleMenu();
+    isMenuOpen && onToggleMenu();
   }
 
   return (

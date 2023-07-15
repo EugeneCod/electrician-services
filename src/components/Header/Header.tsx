@@ -5,7 +5,7 @@ import AppContext from '../../context/AppContext';
 import styles from './Header.module.scss';
 import mainLogo from '../../assets/images/logo_color.svg';
 import phoneLogo from '../../assets/images/icon_phone.svg';
-import { Navigation } from '../';
+import { Navigation, SendCallButton } from '../';
 import { ROUTES } from '../../utils/constants';
 
 
@@ -54,7 +54,8 @@ const Header = () => {
           </div>
           <p className={styles.phoneInfo}>Ответим на звонок с 8:00 до 17:00</p>
         </div>
-        <button className={styles.buttonCall}>Заказать звонок</button>
+        {/* <button className={styles.buttonCall}>Заказать звонок</button> */}
+        <SendCallButton />
         <div onClick={handleToggleMenu} className={styles.burgerContainer}>
           <span className={styles.burger} />
         </div>

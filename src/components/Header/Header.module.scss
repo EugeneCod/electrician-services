@@ -99,30 +99,6 @@
     color: $font-light;
   }
 
-  .buttonCall {
-    grid-column: 4/5;
-    grid-row: 1/2;
-    justify-self: end;
-    padding: 0;
-    outline: none;
-    border: none;
-    width: 120px;
-    height: 40px;
-    background-color: $button-bg;
-    color: $font-light;
-    font-size: 10px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    transition: opacity 0.2s ease;
-    cursor: pointer;
-    &:hover {
-      opacity: 0.7;
-    }
-    &:active {
-      opacity: 0.5;
-    }
-  }
-
   .burgerContainer {
     display: none;
 
