@@ -1,0 +1,30 @@
+@import '../../scss/variables';
+
+.root {
+  
+}
+
+.textarea {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 12px;
+  resize: none;
+  min-height: 41px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid $input-line-bg;
+
+  &:focus {
+    box-shadow: 0px 1px 4px 1px $input-line-bg;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 70px;
+  }
+}

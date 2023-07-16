@@ -11,11 +11,49 @@
   display: flex;
   visibility: hidden;
   opacity: 0;
-  transition: visibility .3s, opacity .2s ease;
+  transition: visibility 0.3s, opacity 0.2s ease;
   z-index: 5;
 
   &.opened {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+.container {
+  position: relative;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
+.closeButton {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  padding: 0;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background: none;
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+    top: -36px;
+    right: 0;
+  }
+}
+
+.closeIcon {
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
   }
 }

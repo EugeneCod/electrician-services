@@ -1,0 +1,46 @@
+@import '../../scss/variables';
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: $font-dark;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.input {
+  font-weight: 400;
+  font-size: 14px;
+  color: $font-dark;
+  padding: 4px 0 4px 8px;
+  border: none;
+  border-bottom: 1px solid $input-line-bg;
+  outline: none;
+  background-color: initial;
+  transition: box-shadow 0.2s ease;
+
+  &:focus {
+    box-shadow: 0px 1px 4px 1px $input-line-bg;
+    border-radius: 5px;
+  }
+}
+
+.input.invalid {
+  color: $font-eye-catching;
+    &:focus {
+      color: $font-dark;
+    }
+}
+
+.inputError {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.21;
+  color: $font-eye-catching;
+  opacity: 1;
+  transition: opacity 0.4s;
+  min-height: 24px;
+}

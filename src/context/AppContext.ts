@@ -1,11 +1,10 @@
-import { createContext, Dispatch, SetStateAction  } from "react";
+import { createContext  } from "react";
 
 interface IAppContext {
+  isLoading?: boolean;
   isCover?: boolean;
   toggleCover?: () => void;
-  popupIsOpen?: boolean;
-  setPopupIsOpen?: Dispatch<SetStateAction<boolean>>;
-  
+  openClientForm?: () => void;
 }
 
 const AppContext = createContext<IAppContext>({});

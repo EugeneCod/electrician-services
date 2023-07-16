@@ -1,14 +1,13 @@
-import { FC } from 'react';
+import { FC, useContext } from 'react';
+
+import AppContext from '../../context/AppContext';
 import styles from './SendCallButton.module.scss';
 
 const SendCallButton: FC = () => {
-
-  function handleCLick() {
-    
-  }
+  const { openClientForm } = useContext(AppContext);
 
   return (
-    <button onClick={handleCLick} className={styles.buttonCall}>Заказать звонок</button>
+    <button onClick={openClientForm} className={styles.buttonCall}>Заказать звонок</button>
   )
 }
 
