@@ -6,16 +6,22 @@ import iconFhone from '../../assets/images/icon_phone.svg';
 import iconMapLocation from '../../assets/images/icon_map-location.svg';
 import iconMail from '../../assets/images/icon_mail.svg';
 import { ROUTES } from '../../utils/constants';
+import SendCallButton from '../SendCallButton/SendCallButton';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.footerTop}>
-          <NavLink to={ROUTES.HOME} className={styles.linkLogo} >
-            <img className={styles.logo} src={mainLogo} alt="Логотип" />
-            <p className={styles.logoText}>Электрика сервис</p>
-          </NavLink>
+          <div className={styles.topLeftContainer}>
+            <NavLink to={ROUTES.HOME} className={styles.linkLogo}>
+              <img className={styles.logo} src={mainLogo} alt="Логотип" />
+              <p className={styles.logoText}>Электрика сервис</p>
+            </NavLink>
+            <div className={styles.buttonContainer}>
+              <SendCallButton />
+            </div>
+          </div>
           <div className={styles.contactsBlock}>
             <h2 className={styles.contactsTitle}>Контакты</h2>
             <ul className={styles.contactsList}>
@@ -40,10 +46,9 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footerBottom}>
-        <div className={styles.container}>
-          <p className={styles.copyRight}>© 2023 · EugeneCod</p>
-        </div>
-          
+          <div className={styles.container}>
+            <p className={styles.copyRight}>© 2023 · EugeneCod</p>
+          </div>
         </div>
       </div>
     </footer>

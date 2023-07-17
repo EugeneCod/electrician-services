@@ -6,7 +6,7 @@ const ROUTES = {
 };
 
 const URL = {
-  MAIN_API: 'http://localhost:3000',
+  MAIN_API: 'http://localhost:8000',
 }
 
 const MESSAGES = {

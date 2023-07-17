@@ -28,6 +28,12 @@
   }
 }
 
+.topLeftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .linkLogo {
   display: flex;
   align-items: center;
@@ -60,6 +66,14 @@
     border-radius: 3px;
     left: 0;
     bottom: -2px;
+  }
+}
+
+.buttonContainer {
+  grid-column: 1/2;
+
+  @media (max-width: 768px) {
+    padding-top: 20px;
   }
 }
 
