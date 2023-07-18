@@ -9,7 +9,7 @@ import { MESSAGES } from '../../utils/constants';
 const App: FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isCover, setIsCover] = useState(false);
-  const [popupWithClientFormIsOpen, setPopupWithClientFormIsOpen] = useState(true);
+  const [popupWithClientFormIsOpen, setPopupWithClientFormIsOpen] = useState(false);
   const [formErrorMessage, setFormErrorMessage] = useState('');
 
   function handleSendCall(name: string, phone: string, message: string) {

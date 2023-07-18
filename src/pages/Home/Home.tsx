@@ -3,10 +3,10 @@ import { FC } from 'react';
 
 const Home: FC = () => {
   return (
-    <>
+    <section>
       <Slider />
       <Promo />
-    </>
+    </section>
   );
 };
 

@@ -49,6 +49,7 @@ const Slider = () => {
         <div className={styles.containerDots}>
           {Array.from({ length: dataSlider.length }).map((_item, index) => (
             <div
+              key={index}
               className={cx({
                 dot: true,
                 active: slideIndex === index + 1,

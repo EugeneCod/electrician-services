@@ -1,0 +1,80 @@
+@import '../../scss/variables';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+}
+
+.topContainer {
+  position: relative;
+  height: 150px;
+  background-image: url(../../assets/images/about-us__black-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $black-bg;
+    opacity: 0.6;
+  }
+}
+
+.textContainer {
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 10px;
+  color: $font-light;
+  font-size: 32px;
+  text-align: center;
+
+}
+
+.focusContainer {
+  background-color: $gray-bg;
+  display: grid;
+  grid-template-columns: 250px max-content;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 0 0 20px 20px ;
+}
+
+.focusTitle {
+  color: $font-light;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.focusList {
+  padding: 0 10px 0 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.focusListItem {
+  color: $font-light;
+  font-size: 14px;
+}

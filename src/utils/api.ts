@@ -8,6 +8,9 @@ export const sendCall =  async (name:string, phone:string, message:string) => {
     },
     body: JSON.stringify({ name, phone, message, }),
   });
+  const data = JSON.stringify({ name, phone, message, })
+  console.log(data);
+  
   const json = await response.json();
   return response.ok ? json : Promise.reject(response);
 }
