@@ -6,7 +6,7 @@ import styles from './Navigation.module.scss';
 import { ROUTES } from '../../utils/constants';
 import mainPageLogo from '../../assets/images/logo_main-page.svg';
 import servicesLogo from '../../assets/images/logo_services.svg';
-import calcLogo from '../../assets/images/logo_calculator.svg';
+// import calcLogo from '../../assets/images/logo_calculator.svg';
 import aboutUsLogo from '../../assets/images/logo_about-us.svg';
 
 const cx = classNames.bind(styles);
@@ -43,12 +43,12 @@ const Navigation:FC<NavigationProps> = (props) => {
             <p className={styles.linkText}>Все услуги</p>
           </NavLink>
         </li>
-        <li className={styles.listItem}>
+        {/* <li className={styles.listItem}>
           <NavLink to={ROUTES.CALCULATOR} onClick={handleNavLinkClick} className={styles.link} >
             <img className={styles.linkIcon} src={calcLogo} alt="Калькулятор" />
             <p className={styles.linkText}>Калькулятор</p>
           </NavLink>
-        </li>
+        </li> */}
         <li className={styles.listItem}>
           <NavLink to={ROUTES.ABOUTUS} onClick={handleNavLinkClick} className={styles.link}>
             <img className={styles.linkIcon} src={aboutUsLogo} alt="О нас" />

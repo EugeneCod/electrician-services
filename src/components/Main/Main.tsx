@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 
-import { Home, Services, Calculator, AboutUs } from '../../pages'
+import { Home, Services, AboutUs } from '../../pages'
 import styles from './Main.module.scss';
 import { ROUTES } from '../../utils/constants';
 
@@ -10,7 +10,6 @@ const Main = () => {
       <Routes>
         <Route path={ROUTES.HOME} element={<Home />} />
         <Route path={ROUTES.SERVICES} element={<Services />} />
-        <Route path={ROUTES.CALCULATOR} element={<Calculator />} />
         <Route path={ROUTES.ABOUTUS} element={<AboutUs />} />
       </Routes>
       
