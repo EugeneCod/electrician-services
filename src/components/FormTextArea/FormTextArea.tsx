@@ -1,6 +1,7 @@
-import { FC, ChangeEvent } from 'react';
+import { FC, ChangeEvent, useContext } from 'react';
 
 import styles from './FormTextArea.module.scss';
+import AppContext from '../../context/AppContext';
 
 type FormTextAreaProps = {
   name: string;
@@ -11,6 +12,7 @@ type FormTextAreaProps = {
 };
 
 const FormTextArea: FC<FormTextAreaProps> = ({ name, placeholder, maxLength, value, onChange }) => {
+  const { isLoading } = useContext(AppContext);
 
   function handleChange(evt: any) {
     onChange(evt);
@@ -24,7 +26,9 @@ const FormTextArea: FC<FormTextAreaProps> = ({ name, placeholder, maxLength, val
       name={name}
       id={name}
       placeholder={placeholder}
-      maxLength={maxLength}></textarea>
+      maxLength={maxLength}
+      readOnly={isLoading}></textarea>
+      
   );
 };
 

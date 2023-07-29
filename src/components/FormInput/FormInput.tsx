@@ -62,7 +62,6 @@ const FormInput: FC<FormInputProps> = ({
         id={name}
         minLength={minLength}
         maxLength={maxLength}
-        // pattern={pattern}
         readOnly={isLoading}
         className={inputClassName}
       />

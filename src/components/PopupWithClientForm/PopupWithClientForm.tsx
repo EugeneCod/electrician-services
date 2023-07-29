@@ -28,7 +28,7 @@ const PopupWithClientForm: FC<PopupWithClientFormProps> = ({
 
   function handleSubmit(evt: FormEvent<HTMLFormElement>) {
     evt.preventDefault();
-    if (values.name && values.phone && messageValue) {
+    if (values.name && values.phone) {
       onSendCall(values.name, values.phone, messageValue);
     }
   }

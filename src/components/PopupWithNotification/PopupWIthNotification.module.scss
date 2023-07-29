@@ -1,0 +1,38 @@
+@import '../../scss/variables';
+
+.root {
+  font-family: $app-font-family;
+  background-color: $main-bg;
+  box-sizing: border-box;
+  color: $font-gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 36px;
+  width: 430px;
+  @media (max-width: 768px) {
+    padding: 50px 18px;
+    width: 280px;
+  }
+}
+
+.image {
+  margin-bottom: 32px;
+  width: 120px;
+  height: 120px;
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+  
+.text {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.21;
+  font-weight: 500;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
