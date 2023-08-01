@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/electrician-services/static/css/main.c725347e.css",
-    "main.js": "/electrician-services/static/js/main.3fcacd58.js",
-    "static/media/promo-1.jpg": "/electrician-services/static/media/promo-1.06b04e9475229d9f2434.jpg",
-    "static/media/promo__tools.jpg": "/electrician-services/static/media/promo__tools.6b47f0e8df2e9b18a069.jpg",
-    "static/media/promo__light.jpg": "/electrician-services/static/media/promo__light.b426025a4390cf548c6b.jpg",
-    "static/media/services-3.jpg": "/electrician-services/static/media/services-3.bce9ce6bff48a8d64b3f.jpg",
-    "static/media/promo-2.jpg": "/electrician-services/static/media/promo-2.deaf185c0729c9ec3322.jpg",
+    "main.css": "/electrician-services/static/css/main.da7a4061.css",
+    "main.js": "/electrician-services/static/js/main.057c7a6b.js",
+    "static/media/promo-1.jpg": "/electrician-services/static/media/promo-1.fe925e1d8a100d4e5a6b.jpg",
+    "static/media/promo__tools.jpg": "/electrician-services/static/media/promo__tools.7f60bd9567385cb9e04f.jpg",
+    "static/media/promo__light.jpg": "/electrician-services/static/media/promo__light.138676ca36a6b80bdae0.jpg",
     "static/media/about-us__black-bg.jpg": "/electrician-services/static/media/about-us__black-bg.9942e19a46ffef59c02c.jpg",
+    "static/media/promo-2.jpg": "/electrician-services/static/media/promo-2.236fadf679a56889c276.jpg",
+    "static/media/services-3.jpg": "/electrician-services/static/media/services-3.57795724e2cbae6468cd.jpg",
     "static/media/Inter-SemiBold.woff": "/electrician-services/static/media/Inter-SemiBold.700528946284a2e352b7.woff",
     "static/media/promo__panel.jpg": "/electrician-services/static/media/promo__panel.4f5d6ee419b545a5e267.jpg",
     "static/media/Inter-SemiBold.woff2": "/electrician-services/static/media/Inter-SemiBold.834a68f88ec7639a591b.woff2",
@@ -37,16 +37,18 @@
     "static/media/promo_icon-3.svg": "/electrician-services/static/media/promo_icon-3.7da8abcc9272780e94a5b55c11440ecb.svg",
     "static/media/advantages_ruble-svgrepo-com.svg": "/electrician-services/static/media/advantages_ruble-svgrepo-com.0b119818e87d50d6790b4a318f2debef.svg",
     "static/media/icon_map-location.svg": "/electrician-services/static/media/icon_map-location.ed8fb03edce2224df8d9e2ccbe0629da.svg",
+    "static/media/popup__info-image_failure.svg": "/electrician-services/static/media/popup__info-image_failure.697df7bc182060f5e5dc70dd3cece85c.svg",
+    "static/media/popup__info-image_approval.svg": "/electrician-services/static/media/popup__info-image_approval.be2569c724c25d147c33f252b16c56c4.svg",
     "index.html": "/electrician-services/index.html",
     "static/media/logo_main-page.svg": "/electrician-services/static/media/logo_main-page.3ed81041c1d4c74b37210aa6964f4ed0.svg",
     "static/media/slider__arrow-right.svg": "/electrician-services/static/media/slider__arrow-right.9e1de59bdba7af257074.svg",
     "static/media/slider__arrow-left.svg": "/electrician-services/static/media/slider__arrow-left.dc4d6a49f463da803f27.svg",
     "static/media/popup__close-icon.svg": "/electrician-services/static/media/popup__close-icon.039f1f5203f653b4bacde5e34ee2810b.svg",
-    "main.c725347e.css.map": "/electrician-services/static/css/main.c725347e.css.map",
-    "main.3fcacd58.js.map": "/electrician-services/static/js/main.3fcacd58.js.map"
+    "main.da7a4061.css.map": "/electrician-services/static/css/main.da7a4061.css.map",
+    "main.057c7a6b.js.map": "/electrician-services/static/js/main.057c7a6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c725347e.css",
-    "static/js/main.3fcacd58.js"
+    "static/css/main.da7a4061.css",
+    "static/js/main.057c7a6b.js"
   ]
 }
